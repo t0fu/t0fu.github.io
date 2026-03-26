@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tofu in Various Forms</title>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "d4f9de33-f3f8-4ff0-bede-62df6766cb4f",
+      });
+    });
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ec;
+      color: #3a2e22;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #fff8ee;
+      border-bottom: 2px solid #f0d8a8;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #8b5e3c;
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #7a6555;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e8d5b0;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .card .emoji {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      color: #6b4226;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #7a6555;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #a08060;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🫘 Tofu in Various Forms</h1>
+    <p>A celebration of the world's most versatile bean curd.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card">
+        <span class="emoji">🪨</span>
+        <h2>Extra-Firm Tofu</h2>
+        <p>Dense and sturdy — perfect for grilling, pan-frying, or cubing into stir-fries.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🍦</span>
+        <h2>Silken Tofu</h2>
+        <p>Smooth and creamy — ideal for soups, smoothies, desserts, and sauces.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🫙</span>
+        <h2>Soft Tofu</h2>
+        <p>Delicate and pillowy — wonderful in sundubu-jjigae (Korean soft tofu stew).</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🧈</span>
+        <h2>Firm Tofu</h2>
+        <p>Versatile and holds its shape well — great baked, scrambled, or braised.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🫕</span>
+        <h2>Braised Tofu</h2>
+        <p>Simmered in savory sauces until it absorbs deep, rich flavors throughout.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🍢</span>
+        <h2>Agedashi Tofu</h2>
+        <p>Lightly battered and deep-fried, served in a delicate dashi broth.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🧀</span>
+        <h2>Smoked Tofu</h2>
+        <p>Infused with smoky depth — fantastic in salads, sandwiches, and tacos.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🍮</span>
+        <h2>Tofu Pudding (Douhua)</h2>
+        <p>Ultra-silky and served sweet with syrup, or savory with soy and ginger.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ and a whole lot of bean curd.</p>
+  </footer>
+</body>
+</html>
